@@ -33,12 +33,6 @@ dependencies {
     testRuntime "org.jetbrains.spek:spek-junit-platform-engine:$spek_version"
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
 junitPlatform {
     filters {
         engines {
