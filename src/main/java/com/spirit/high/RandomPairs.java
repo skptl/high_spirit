@@ -29,4 +29,16 @@ public class RandomPairs {
         return returnArray;
     }
 
+    static String[][] pickTwo(final String[] values) {
+        Collections.shuffle(Arrays.asList(values));
+        final String[] duplicates = Arrays.copyOf(values, values.length);
+        Collections.rotate(Arrays.asList(duplicates), 1);
+        String[][] returnArray = new String[values.length][2];
+        for (int j=0; j<returnArray.length; j++) {
+            returnArray[j][0] = values[j];
+            returnArray[j][1] = duplicates[j];
+        }
+        return returnArray;
+    }
+
 }
