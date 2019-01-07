@@ -1,8 +1,10 @@
+package com.spirit.high;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Main {
+public class MorganAndString {
 
     private static String morganAndString(String a, String b) {
         StringBuilder resultBuilder = new StringBuilder();
